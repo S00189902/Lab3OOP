@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2213CC1-9C45-4887-8C9B-0E85993A3CCB}</ProjectGuid>
+    <ProjectGuid>{DAF8211E-4896-49FC-AB2E-0606EA95C73C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ex_3</RootNamespace>
-    <AssemblyName>Ex 3</AssemblyName>
+    <RootNamespace>TestCashRegister</RootNamespace>
+    <AssemblyName>TestCashRegister</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
