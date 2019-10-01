@@ -15,6 +15,7 @@ namespace EX_1_2
             car1.Model = "Escort";
             car1.Speed = 55;
             car1.Size = 2.0;
+            
 
             Car car2 = new Car();
             car2.Make = "Mitsubishi";
