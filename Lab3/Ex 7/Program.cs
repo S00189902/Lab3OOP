@@ -10,13 +10,30 @@ namespace Ex_7
     {
         static void Main(string[] args)
         {
-            School[] schools = new School[5];
+            List<School> schools = new List<School>();
 
-            for(int i =0; i < schools.Length; i++)
+            for(int i =0; i < 5; i++)
             {
-                schools[i] = new School();
-                Console.Write("")
+                Console.Write("Please enter a school name : ");
+                string name = Console.ReadLine();
+
+                Console.Write("How many students are enrolled : ");
+                int num = Convert.ToInt32(Console.ReadLine());
+
+                schools.Add(new School(name,num));
+                
             }
+
+            schools.Sort();
+
+            for(int i =0; i < 5;i++)
+            {
+                Console.WriteLine("{0} school has {1} students",schools[i].SchoolName,schools[i].NumberStudents);
+            }
+                
+            
+
         }
+       
     }
 }

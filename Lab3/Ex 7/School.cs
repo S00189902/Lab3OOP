@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex_7
 {
-    class School
+    class School:IComparable<School>
     {
         private string schoolName;
 
@@ -25,6 +25,25 @@ namespace Ex_7
             set { numStudents = value; }
         }
 
+        public School(string name,int numstudents)
+        {
+            SchoolName = name;
+            NumberStudents = numstudents;
+        }
+        public int CompareTo(School sc)
+        {
+            int returnVal;
+            if (this.numStudents > sc.numStudents)
+                returnVal = 1;
+            else if (this.numStudents < sc.numStudents)
+                returnVal = -1;
+            else
+                returnVal = 0;
+
+            return returnVal;
+        }
+
+       
 
 
     }
